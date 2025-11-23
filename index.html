@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🌍 Currency Converter</h2>
+
+        <form id="currency-form">
+            <input type="number" id="amount" placeholder="Enter amount" required />
+
+            <div class="dropdown">
+                <!-- FROM -->
+                <div class="select-container">
+                    <img id="from-flag" src="" alt="flag" />
+                    <select id="from-currency"></select>
+                </div>
+
+                <i class="fa-solid fa-arrow-right-arrow-left" id="swap"></i>
+
+                <!-- TO -->
+                <div class="select-container">
+                    <img id="to-flag" src="" alt="flag" />
+                    <select id="to-currency"></select>
+                </div>
+            </div>
+
+            <p class="msg" id="result">Converted amount will appear here...</p>
+
+            <div class="button-group">
+                <button type="submit">Convert</button>
+                <button type="button" class="swap-btn" id="swap-btn">Swap</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="countries.js"></script>
+    <script src="app.js"></script>
+
+    <!-- FontAwesome for swap icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+</body>
+</html>
